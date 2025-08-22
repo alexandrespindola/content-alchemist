@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.gs": "javascript"
+  },
+  "files.associations": {
+    "*.gs": "javascriptreact"
+  }
+}
