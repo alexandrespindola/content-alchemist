@@ -1,0 +1,67 @@
+# The Content Alchemist - AI-Augmented Marketing Campaign Generator
+# Portfolio project showcasing event-driven, AI-centric automation architecture
+
+## Project Context
+- This is a portfolio project for securing a JS Automation Developer role
+- Target: AI-First company in European tech market
+- Focus: Demonstrate orchestration of multiple cloud services and AI models
+
+## Core Architecture
+- **Human Interface:** Google Sheets + Apps Script
+- **Orchestration:** N8N (self-hosted via Cloudflare Tunnel)  
+- **Cache/Rate Limiting:** Valkey/Redis (Heroku)
+- **Pre-processing:** Deno Deploy (TypeScript)
+- **AI Transcription:** AssemblyAI
+- **AI Generation:** Google Gemini
+- **Output:** Google Docs, Jira tasks
+
+## Technical Constraints & Preferences
+- Use TypeScript for all new code
+- Apps Script is NOT Node.js - use Apps Script specific APIs
+- N8N workflows should be saved as JSON in repository
+- All services use free tiers - be mindful of API limits
+- Use clasp CLI for Apps Script development
+- Prefer stability over complexity - avoid web scraping
+
+## Development Standards
+- **Error Handling:** Always implement try/catch blocks
+- **Logging:** Use console.log for debugging in all environments
+- **API Keys:** Use PropertiesService in Apps Script, N8N credentials for workflows
+- **Caching:** Check Redis before expensive operations (transcription, AI calls)
+- **Documentation:** Update relevant .md files when making architectural changes
+
+## File Structure Context
+```
+project/
+├── README.md              # Project overview (keep updated)
+├── docs/
+│   ├── ARCHITECTURE.md    # Deep technical details
+│   ├── DEVELOPMENT_PLAN.md # Phased roadmap with checkboxes
+│   ├── GEMINI_CONTEXT.md  # Strategic decisions & user profile
+│   └── SETUP_GUIDE.md     # Step-by-step environment setup
+├── apps-script/           # Google Apps Script code
+├── n8n-workflows/         # N8N workflow JSON exports  
+├── deno-api/             # Deno Deploy sanitization service
+└── tests/                # Test cases for critical paths
+```
+
+## AI Workflow Philosophy
+1. **Strategic AI (Current chat):** Architecture & planning
+2. **Co-pilot AI (Cursor):** Real-time coding & debugging  
+3. **Specialist AI (N8N nodes):** Embedded workflow tasks
+
+## Common Patterns to Follow
+- **N8N Nodes:** Use native nodes when available (AssemblyAI, Redis, HTTP Request)
+- **Apps Script:** Use doGet() for web apps, onOpen() for menu triggers
+- **Deno Deploy:** Keep API lightweight, focus on text sanitization
+- **Error Recovery:** Build resilient workflows that can retry failed steps
+
+## Current Development Phase
+Check DEVELOPMENT_PLAN.md for current phase and completed tasks.
+Update checkboxes as features are implemented.
+
+## Key Business Rules
+- One YouTube URL input generates complete multi-channel campaign
+- Human review required before content goes live (via Jira)
+- Cache results to prevent duplicate processing costs
+- All content delivered as organized Google Drive folders

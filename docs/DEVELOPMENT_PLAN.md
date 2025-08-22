@@ -6,20 +6,19 @@ This is an intensive plan to build a functional prototype, focusing on the most 
 
 The goal of this phase is to build the main processing pipeline, ensuring the AI logic and integrations work as expected.
 
-* **\[ \]** Configure accounts for Valkey/Redis, AssemblyAI, and Google Gemini.  
+* **\[ \]** Configure accounts for Valkey/Redis and Google Gemini.  
 * **\[ \]** Build the core of the **N8N** workflow:  
   * Set up a manual trigger for testing.  
   * Integrate with the **Redis** node to check the cache.  
-  * Integrate with the **AssemblyAI** node to transcribe a test YouTube URL.  
-* **\[ \]** Develop and deploy the **sanitization API on Deno Deploy**. Update N8N to call this API with the transcript.  
+  * Integrate with the **Deno API** for transcript sanitization.  
 * **\[ \]** Integrate the workflow with **Google Gemini**. Send the clean text from Deno to Gemini and generate a draft for an X/Twitter thread.  
-* **Phase Goal:** Have an N8N workflow that, from a video URL, can transcribe, clean, and generate a content draft, using Redis to prevent duplicate work.
+* **Phase Goal:** Have an N8N workflow that, from a cleaned transcript, can generate content drafts using Redis to prevent duplicate work.
 
 ### **Phase 2: The Entry and Exit Doors (Interfaces & Actions)**
 
 The goal of this phase is to connect the system's "brain" to the outside world, both for receiving requests and for delivering results.
 
-* **\[ \]** Build the interface in **Google Sheets** and the **Apps Script** trigger. Implement the function that sends the URL to the N8N webhook.  
+* **\[ \]** Build the interface in **Google Sheets** and the **Apps Script** trigger. Implement the function that sends the transcript to the N8N webhook.  
 * **\[ \]** Replace the manual trigger in N8N with the real **Webhook** node.  
 * **\[ \]** Implement the **Asset Delivery** part in N8N:  
   * Publish a function in Apps Script as a Web App.  
@@ -33,7 +32,7 @@ The goal of this phase is to connect the system's "brain" to the outside world, 
 The goal of this phase is to tie all the pieces together, perform end-to-end testing, and refine the product.
 
 * **\[ \]** Implement the **Feedback Loop**: the final call from N8N back to Apps Script to update the Status in the Spreadsheet to "Completed".  
-* **\[ \]** Conduct **end-to-end testing**. Initiate 5-10 different campaigns with various video URLs and verify the output is correct on all platforms.  
+* **\[ \]** Conduct **end-to-end testing**. Initiate 5-10 different campaigns with various transcripts and verify the output is correct on all platforms.  
 * **\[ \]** Refine the **Gemini prompts** to improve the quality of the generated content.  
 * **\[ \]** Refine the **Redis caching logic**.  
 * **\[ \]** Prepare a clear demonstration of the system in action, explaining the business value and architectural decisions.  

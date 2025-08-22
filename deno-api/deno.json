@@ -1,0 +1,19 @@
+{
+  "entrypoint": "cleaner.ts",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env cleaner.ts",
+    "deploy": "deployctl deploy --project=content-alchemist-cleaner --entrypoint=cleaner.ts"
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "deploy": {
+    "project": "544842d1-34e0-4328-896a-5bfd0f203348",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "cleaner.ts"
+  }
+}
