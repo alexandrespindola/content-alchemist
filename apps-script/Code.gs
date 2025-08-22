@@ -31,9 +31,11 @@ function testPopup() {
   try {
     const campaignManager = new CampaignManager();
     const result = campaignManager.testPopup();
-    
+
     if (result.success) {
-      SpreadsheetApp.getUi().alert("Popup test successful!\n\n" + result.message);
+      SpreadsheetApp.getUi().alert(
+        "Popup test successful!\n\n" + result.message
+      );
     } else {
       SpreadsheetApp.getUi().alert("Popup test failed: " + result.error);
     }
@@ -137,72 +139,96 @@ function doPost(e) {
  */
 function processCampaignFormData(formData) {
   try {
-    const sheetName = (typeof CONFIG !== 'undefined' && CONFIG.SHEET_NAME) ? CONFIG.SHEET_NAME : 'Content Alchemist';
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+    const sheetName =
+      typeof CONFIG !== "undefined" && CONFIG.SHEET_NAME
+        ? CONFIG.SHEET_NAME
+        : "Content Alchemist";
+    const sheet =
+      SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
     if (!sheet) {
-      throw new Error('Sheet not found: ' + sheetName);
+      throw new Error("Sheet not found: " + sheetName);
     }
 
-    const partnerName = (formData && formData.partnerName || '').trim();
-    const youtubeUrl = (formData && formData.youtubeUrl || '').trim();
-    const transcriptRaw = (formData && formData.transcriptRaw || '').trim();
-    const inputCampaignId = (formData && formData.campaignId || '').trim();
+    const partnerName = ((formData && formData.partnerName) || "").trim();
+    const youtubeUrl = ((formData && formData.youtubeUrl) || "").trim();
+    const transcriptRaw = ((formData && formData.transcriptRaw) || "").trim();
+    const inputCampaignId = ((formData && formData.campaignId) || "").trim();
 
     if (!partnerName || !transcriptRaw) {
-      return { success: false, error: 'Missing required fields: partnerName and transcriptRaw are required.' };
+      return {
+        success: false,
+        error:
+          "Missing required fields: partnerName and transcriptRaw are required.",
+      };
     }
 
-    const statusProcessing = (typeof CONFIG !== 'undefined' && CONFIG.STATUSES && CONFIG.STATUSES.PROCESSING)
-      ? CONFIG.STATUSES.PROCESSING
-      : 'Processing';
+    const statusProcessing =
+      typeof CONFIG !== "undefined" &&
+      CONFIG.STATUSES &&
+      CONFIG.STATUSES.PROCESSING
+        ? CONFIG.STATUSES.PROCESSING
+        : "Processing";
 
     const campaignId = inputCampaignId || generateCampaignIdSimple(partnerName);
 
     const rowValues = [
-      campaignId,                // A: Campaign_ID
-      partnerName,               // B: Partner_Name
-      youtubeUrl,                // C: YouTube_URL
-      transcriptRaw,             // D: Transcript_Raw
-      statusProcessing,          // E: Status
-      '',                        // F: Output_Folder
-      new Date()                 // G: Created_At
+      campaignId, // A: Campaign_ID
+      partnerName, // B: Partner_Name
+      youtubeUrl, // C: YouTube_URL
+      transcriptRaw, // D: Transcript_Raw
+      statusProcessing, // E: Status
+      "", // F: Output_Folder
+      new Date(), // G: Created_At
     ];
 
     const nextRow = sheet.getLastRow() + 1;
     sheet.getRange(nextRow, 1, 1, rowValues.length).setValues([rowValues]);
 
     // Trigger webhook
-    const webhookUrl = (typeof CONFIG !== 'undefined' && CONFIG.N8N && CONFIG.N8N.WEBHOOK_URL)
-      ? CONFIG.N8N.WEBHOOK_URL
-      : (PropertiesService.getScriptProperties().getProperty('N8N_WEBHOOK_URL') || '');
+    const webhookUrl =
+      typeof CONFIG !== "undefined" && CONFIG.N8N && CONFIG.N8N.WEBHOOK_URL
+        ? CONFIG.N8N.WEBHOOK_URL
+        : PropertiesService.getScriptProperties().getProperty(
+            "N8N_WEBHOOK_URL"
+          ) || "";
 
     if (webhookUrl) {
       const payload = {
         campaign_id: campaignId,
         partner_name: partnerName,
         youtube_url: youtubeUrl,
-        transcript_raw: transcriptRaw
+        transcript_raw: transcriptRaw,
       };
 
       try {
         UrlFetchApp.fetch(webhookUrl, {
-          method: 'post',
-          contentType: 'application/json',
+          method: "post",
+          contentType: "application/json",
           payload: JSON.stringify(payload),
-          muteHttpExceptions: true
+          muteHttpExceptions: true,
         });
       } catch (err) {
         // Still return success for the sheet write; include warning
-        return { success: true, campaignId: campaignId, rowNumber: nextRow, warning: 'Webhook failed: ' + err.message };
+        return {
+          success: true,
+          campaignId: campaignId,
+          rowNumber: nextRow,
+          warning: "Webhook failed: " + err.message,
+        };
       }
     } else {
       // No webhook configured; return success for the sheet write
-      return { success: true, campaignId: campaignId, rowNumber: nextRow, warning: 'Webhook URL not configured' };
+      return {
+        success: true,
+        campaignId: campaignId,
+        rowNumber: nextRow,
+        warning: "Webhook URL not configured",
+      };
     }
 
     return { success: true, campaignId: campaignId, rowNumber: nextRow };
   } catch (error) {
-    console.error('processCampaignFormData error:', error);
+    console.error("processCampaignFormData error:", error);
     return { success: false, error: error.message };
   }
 }
@@ -213,6 +239,10 @@ function processCampaignFormData(formData) {
 function generateCampaignIdSimple(partnerName) {
   const timestamp = new Date().getTime();
   const random = Math.floor(Math.random() * 1000);
-  const prefix = (partnerName || 'CAM').replace(/[^a-zA-Z0-9]/g, '').substring(0, 3).toUpperCase() || 'CAM';
-  return prefix + '-' + timestamp + '-' + random;
+  const prefix =
+    (partnerName || "CAM")
+      .replace(/[^a-zA-Z0-9]/g, "")
+      .substring(0, 3)
+      .toUpperCase() || "CAM";
+  return prefix + "-" + timestamp + "-" + random;
 }
