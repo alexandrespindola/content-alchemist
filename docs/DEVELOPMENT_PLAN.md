@@ -1,39 +1,38 @@
 # **Phased Development Plan: The Content Alchemist Prototype**
 
-This is an intensive plan to build a functional prototype, focusing on the most complex and highest-risk parts first.
+This is a focused plan to build a functional prototype, prioritizing the core flow.
 
 ### **Phase 1: The System's Core (Backend & AI)**
 
-The goal of this phase is to build the main processing pipeline, ensuring the AI logic and integrations work as expected.
+The goal is to build the main processing pipeline, ensuring the AI logic and integrations work as expected.
 
-* **\[ \]** Configure accounts for Valkey/Redis and Google Gemini.  
-* **\[ \]** Build the core of the **N8N** workflow:  
-  * Set up a manual trigger for testing.  
-  * Integrate with the **Redis** node to check the cache.  
-  * Integrate with the **Deno API** for transcript sanitization.  
-* **\[ \]** Integrate the workflow with **Google Gemini**. Send the clean text from Deno to Gemini and generate a draft for an X/Twitter thread.  
-* **Phase Goal:** Have an N8N workflow that, from a cleaned transcript, can generate content drafts using Redis to prevent duplicate work.
+* [ ] Build the core **N8N** workflow:
+  * Manual trigger for testing.
+  * (Optional) Integrate **Redis** for cache key checks.
+  * Integrate the **Deno API** for transcript sanitization (`deno-api/`).
+  * Integrate **Google Gemini** to generate Facebook/Instagram/LinkedIn drafts.
+* [ ] Define the response contract from N8N to Apps Script:
+  * `{ urlExists: false }` or `{ urlExists: true, url: <drive-folder> }`.
 
 ### **Phase 2: The Entry and Exit Doors (Interfaces & Actions)**
 
-The goal of this phase is to connect the system's "brain" to the outside world, both for receiving requests and for delivering results.
+Connect the system's "brain" to the outside world.
 
-* **\[ \]** Build the interface in **Google Sheets** and the **Apps Script** trigger. Implement the function that sends the transcript to the N8N webhook.  
-* **\[ \]** Replace the manual trigger in N8N with the real **Webhook** node.  
-* **\[ \]** Implement the **Asset Delivery** part in N8N:  
-  * Publish a function in Apps Script as a Web App.  
-  * Have N8N call this Web App to create a new **Google Drive Folder** and populate it with multiple **Google Docs** containing the generated Markdown.  
-  * Have N8N update the original Spreadsheet with a link to the new folder.  
-* **\[ \]** Integrate the creation of the review task in **Jira**.  
-* **Phase Goal:** Have a functional end-to-end flow. Be able to start a campaign in Sheets and see a Google Drive folder with documents and a Jira task created automatically.
+* [ ] **Google Sheets + Apps Script** (`apps-script/`):
+  * Popup form to collect inputs (`Partner_Name`, `YouTube_URL`, `Transcript_Raw`).
+  * Write a row with `Status=Processing`.
+  * Call the N8N webhook and handle its response.
+  * If a pre-existing URL is returned, show it as a clickable link.
+  * Auto-link the `Output_Folder` cell to an existing Drive folder when the name matches a sibling folder of the spreadsheet.
+* [ ] Replace manual trigger in N8N with Webhook.
+* [ ] Delivery: Generate HTML → convert to plain text/Google Docs and save in a Drive folder.
 
 ### **Phase 3: Connection, Testing, and Refinement**
 
-The goal of this phase is to tie all the pieces together, perform end-to-end testing, and refine the product.
+Tie the pieces together, test, and refine.
 
-* **\[ \]** Implement the **Feedback Loop**: the final call from N8N back to Apps Script to update the Status in the Spreadsheet to "Completed".  
-* **\[ \]** Conduct **end-to-end testing**. Initiate 5-10 different campaigns with various transcripts and verify the output is correct on all platforms.  
-* **\[ \]** Refine the **Gemini prompts** to improve the quality of the generated content.  
-* **\[ \]** Refine the **Redis caching logic**.  
-* **\[ \]** Prepare a clear demonstration of the system in action, explaining the business value and architectural decisions.  
-* **Phase Goal:** Have a functional, tested prototype and a cohesive, impactful presentation ready.
+* [ ] Feedback loop: N8N updates `Status` (and folder URL) upon completion.
+* [ ] End-to-end testing with different transcripts.
+* [ ] Refine Gemini prompts to improve quality.
+* [ ] Refine optional Redis caching logic.
+* [ ] Prepare a clear demo of the workflow in action.
