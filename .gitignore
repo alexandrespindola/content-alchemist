@@ -1,0 +1,63 @@
+# .gitignore for the Content Alchemist Project
+
+# GENERAL - Operating System & Editor Files
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.swp
+
+# VS Code / Cursor specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+.cursor/
+
+# SENSITIVE - Credentials & Environment Variables
+
+# Ignore all .env files
+.env
+.env.*
+
+# But DO commit an example file
+!/.env.example
+
+# Cloudflare Tunnel credentials if stored locally
+*.pem
+
+# GOOGLE APPS SCRIPT (CLASP)
+**/.clasp.json
+
+# NODE.JS / NPM
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+.npm
+.pnp.*
+
+# DENO
+deno.lock
+
+# LOGS & TEMPORARY FILES
+
+logs/
+*.log
+*.tmp
+*.temp
