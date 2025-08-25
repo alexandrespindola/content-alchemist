@@ -29,7 +29,7 @@ const CONFIG = {
   
   // N8N configuration
   N8N: {
-    WEBHOOK_URL: 'https://n8n-local.titansdev.es/webhook/content-alchemy',
+    WEBHOOK_URL: 'https://n8n-local.titansdev.es/webhook-test/content-alchemy',
     TIMEOUT: 30000, // 30 seconds
     RETRY_ATTEMPTS: 3
   },

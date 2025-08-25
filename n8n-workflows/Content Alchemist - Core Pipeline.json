@@ -12,7 +12,7 @@
       "typeVersion": 1,
       "position": [
         -1008,
-        348
+        352
       ],
       "id": "1c0ce3f1-1148-42a0-bab1-00c4135710c5",
       "name": "Check Cache",
@@ -41,7 +41,7 @@
       "typeVersion": 1.7,
       "position": [
         -336,
-        348
+        352
       ],
       "id": "34cc32ac-364f-4849-9d74-64f0b0a317a3",
       "name": "Generate Content"
@@ -53,8 +53,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -328,
-        572
+        -336,
+        576
       ],
       "id": "b9abeadb-057b-4933-bbe9-25810573487c",
       "name": "Google Gemini Chat Model",
@@ -72,8 +72,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.3,
       "position": [
-        -200,
-        572
+        -208,
+        576
       ],
       "id": "9b22a8e6-a380-4cab-845d-aecbe7aca15f",
       "name": "Structured Output Parser"
@@ -97,7 +97,7 @@
       "typeVersion": 4.2,
       "position": [
         -560,
-        348
+        352
       ],
       "id": "3e18b302-235f-451d-8759-f5d6ec7b82cb",
       "name": "Clean Content"
@@ -111,7 +111,7 @@
       "typeVersion": 1,
       "position": [
         16,
-        348
+        352
       ],
       "id": "b4198288-e111-4ccb-9da1-394385f7d416",
       "name": "Split Out"
@@ -150,7 +150,7 @@
       "typeVersion": 4.2,
       "position": [
         688,
-        348
+        352
       ],
       "id": "c97b5148-2543-463f-add5-0b20fdcc5ec8",
       "name": "CREATE Image Hugging Face",
@@ -170,7 +170,7 @@
       "typeVersion": 2,
       "position": [
         464,
-        348
+        352
       ],
       "id": "7874d41b-3916-4507-9f50-68c2c59e3ef9",
       "name": "CREATE Hash"
@@ -185,7 +185,7 @@
       "typeVersion": 3,
       "position": [
         240,
-        348
+        352
       ],
       "id": "6e283083-c33e-46c6-827b-a21a493cd2ca",
       "name": "Loop Over Items"
@@ -200,7 +200,7 @@
       "typeVersion": 2.1,
       "position": [
         -1232,
-        348
+        352
       ],
       "id": "bd6a666c-2b2c-468c-95b4-9428861d0984",
       "name": "Webhook",
@@ -215,7 +215,7 @@
       "typeVersion": 2,
       "position": [
         1264,
-        104
+        112
       ],
       "id": "876a2c31-2a07-4d29-9d0e-92be80e71bb3",
       "name": "Create a document",
@@ -235,7 +235,7 @@
       "typeVersion": 1.2,
       "position": [
         688,
-        104
+        112
       ],
       "id": "7377df59-d882-4c05-9372-6299734aab44",
       "name": "HTML",
@@ -258,7 +258,7 @@
       "typeVersion": 2,
       "position": [
         1488,
-        104
+        112
       ],
       "id": "180f4001-22bb-4c8e-9980-2ea136b38a14",
       "name": "Update a document",
@@ -277,7 +277,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        984,
+        992,
         224
       ],
       "id": "d1060282-e1c6-47c4-9206-efa47b7c63fc",
@@ -334,7 +334,7 @@
       "typeVersion": 3,
       "position": [
         -784,
-        348
+        352
       ],
       "id": "2a7d2c77-1529-49bd-86ca-4c3f6626816a",
       "name": "Create folder",
@@ -354,7 +354,7 @@
       "typeVersion": 1,
       "position": [
         464,
-        104
+        112
       ],
       "id": "f622b1ad-77be-4639-b8b3-c8652abc094f",
       "name": "Aggregate"
@@ -476,7 +476,7 @@
       "typeVersion": 4.7,
       "position": [
         1936,
-        104
+        112
       ],
       "id": "d566d7eb-fb1c-4f75-a991-be23602afc79",
       "name": "Update row in sheet",
@@ -506,7 +506,7 @@
       "typeVersion": 3,
       "position": [
         976,
-        420
+        432
       ],
       "id": "9550f1cf-3115-4b55-a2a7-28aa0fc69f55",
       "name": "Upload Image",
@@ -527,7 +527,7 @@
       "typeVersion": 1,
       "position": [
         1712,
-        104
+        112
       ],
       "id": "9d198e4b-376f-433e-94e0-8c7c4ec214da",
       "name": "Set Cache (Folder)",
@@ -546,26 +546,26 @@
           "headers": {
             "host": "n8n-local.titansdev.es",
             "user-agent": "Mozilla/5.0 (compatible; Google-Apps-Script; beanserver; +https://script.google.com; id: UAEmdDd_F5efYfjiT8Gcx26ZnzSpVG1UJPw)",
-            "content-length": "33427",
+            "content-length": "4242",
             "accept-encoding": "gzip, br",
             "cdn-loop": "cloudflare; loops=1",
-            "cf-connecting-ip": "35.187.143.1",
+            "cf-connecting-ip": "107.178.192.37",
             "cf-ipcountry": "US",
-            "cf-ray": "973452879eae37ec-FRA",
+            "cf-ray": "974b1a2ebd41c987-IAD",
             "cf-visitor": "{\"scheme\":\"https\"}",
-            "cf-warp-tag-id": "d256a47e-f989-48a4-a0a6-8176d2401559",
+            "cf-warp-tag-id": "a6b29a91-9086-4140-a90b-8d8a6e65ccc2",
             "connection": "keep-alive",
             "content-type": "application/json",
-            "x-forwarded-for": "2a0a:a546:73d:0:3c2f:d991:bea9:318d,35.187.143.1",
+            "x-forwarded-for": "2a0a:a546:73d:0:3c2f:d991:bea9:318d,107.178.192.37",
             "x-forwarded-proto": "https"
           },
           "params": {},
           "query": {},
           "body": {
-            "campaign_id": "GRO-1755886174978-707",
+            "campaign_id": "GRO-1756125037470-517",
             "partner_name": "Groupon",
-            "youtube_url": "https://www.youtube.com/watch?v=pC-4STxxY88",
-            "transcript_raw": "# tactiq.io free youtube transcript\n# No title found\n# https://www.youtube.com/watch/pC-4STxxY88\n\n00:00:00.000 No text\n00:00:02.800 Welcome to another episode of food\n00:00:04.400 trends as we explore through lifting\n00:00:06.000 many ash various trends in the food and\n00:00:08.960 drink world. Boys, are you ready for\n00:00:10.880 some surprises? I'm feeling trendy.\n00:00:13.200 You're looking? Yes, I am. Ever. Lift\n00:00:17.039 clush. A\n00:00:19.920 hello from Eb's personal collection. No,\n00:00:22.720 that looks like it looks like a torch.\n00:00:25.359 It looks like a water torch. Yeah. It\n00:00:27.439 looks like one of those ones you see\n00:00:28.960 bobbing in the sea. It's a boy. A boy\n00:00:32.000 torch. Oh, or a buoy. Or a torch for a\n00:00:35.120 boy. But you have to hold it. You have\n00:00:36.880 to hold it. It turns on. Okay. Woah.\n00:00:38.480 Woah. Woah. Woah. What the heck is this?\n00:00:40.239 It says in the side of it, which makes\n00:00:42.320 no sense. Scolop light. That's the bit\n00:00:45.040 to do with food. So, it is a sea thing.\n00:00:47.120 Auto immersion. So, it's been in the\n00:00:48.480 water. The water makes the connection.\n00:00:50.480 Therefore, it's on. Which is why your\n00:00:51.920 hand is doing similar cuz your hand has\n00:00:53.680 got moisture. It perspires and does the\n00:00:55.840 water connection that describes grow\n00:00:58.239 towards the light. Is it like moths in a\n00:01:00.160 bug's life? Photosynthesis. Boys, you're\n00:01:02.399 very close without the addition of the\n00:01:04.319 second cloch, which is another clue.\n00:01:06.479 Lift\n00:01:07.880 clo and you have to find them in the\n00:01:10.600 sand. And this helps you find my hands\n00:01:14.000 are less clammy. Are you sure that's not\n00:01:15.280 a floaty device? It is a uh one bang. I\n00:01:19.920 was right. You were right. Rope onto\n00:01:22.240 there. cade at the bottom. Where did I\n00:01:24.479 leave my scolops? Yeah, where did I\n00:01:26.159 leave my scolops? It's a fair point, but\n00:01:28.640 it's not a boy light. You were closer\n00:01:32.880 with the Bug's Life moth reference.\n00:01:36.040 Scolops have about 200\n00:01:39.079 eyes and they are really attracted to\n00:01:42.000 lights. So, this is brand new technology\n00:01:45.360 that has been discovered to help more\n00:01:48.680 sustainably farm and harvest scolops.\n00:01:52.720 Scolops have eyes. Yep. And they're\n00:01:56.000 attracted to light. 95% of scolops in\n00:01:59.600 the UK are caught with dredging methods.\n00:02:02.719 So, they drag something along the seabed\n00:02:05.439 and it doesn't discriminate. It scrapes\n00:02:07.759 up scolops, good, but also everything\n00:02:09.840 else, marine life and other things that\n00:02:12.080 is doing terrible damage to our seabeds.\n00:02:14.480 The alternative, which are the scolops\n00:02:16.640 that we use here in the studio, are\n00:02:18.000 always hand dived. Very expensive.\n00:02:20.480 You're paying for humans to dive and\n00:02:22.640 pick them up by hand. It can't be done\n00:02:24.160 in bad weather. So, lots of limitations.\n00:02:27.200 This is potentially a brand new method\n00:02:29.200 that fits in between. Very exciting.\n00:02:32.080 Should we talk about it while you eat\n00:02:33.840 some scolops? Yes.\n00:02:36.720 What you've got in front of you is a\n00:02:38.080 delicious sesame yogurt with some\n00:02:39.920 scolops, some edetami, some pickled\n00:02:42.360 ingredients, and a beautiful herb oil.\n00:02:44.879 Oh yeah.\n00:02:47.040 I mean, first off, do you like scolops?\n00:02:49.280 I think they are my favorite seafood.\n00:02:51.200 They're so versatile. They just they are\n00:02:53.440 incredibly satisfying, but I've always\n00:02:54.879 been nervous about buying them because\n00:02:57.519 they are quite expensive and you need to\n00:02:59.440 get the right ones. So, this light and\n00:03:02.239 the attachment that goes on the end of\n00:03:03.680 the cage that allows the scolops to\n00:03:05.120 crawl in and then not crawl out is from\n00:03:08.879 scolop light. Um, so they're specially\n00:03:11.599 designed lenses in that thing you're\n00:03:12.959 holding, Jay, to radiate light outwards,\n00:03:14.879 i.e. to attract more scolops.\n00:03:16.640 Interestingly, this discovery happened\n00:03:18.560 when fisheries scientists tried\n00:03:21.280 experimenting with lights in crab and\n00:03:23.599 lobster pots to see if it would make any\n00:03:25.879 difference. It didn't. But when they\n00:03:28.080 came back to the pots, they noticed an\n00:03:29.519 unusual number of scolops in them. This\n00:03:32.400 was literally a couple of years ago. So\n00:03:33.840 they did a really interesting test. They\n00:03:36.239 took\n00:03:37.239 1,886 scolop pots, 900 or so without\n00:03:40.799 lights, and they caught just two\n00:03:43.239 scolops, 900 or so with lights, and they\n00:03:46.879 caught 518\n00:03:49.159 scolops.\n00:03:50.760 22,000% increase. Oh wow. Are scolops\n00:03:55.360 deep water? You wouldn't class it as a\n00:03:57.200 deep sea life. Deep deep deep sea life\n00:04:00.239 is like the weird the weird and\n00:04:02.080 wonderful creatures you never get to\n00:04:03.360 see. You can dive to them. Yeah, that's\n00:04:05.360 what I mean. Like they're they're not\n00:04:07.519 sheltered from all light. So they're not\n00:04:09.519 that deep. No. So just is the light just\n00:04:12.480 something completely different to them\n00:04:14.239 or is it just Yeah. Yeah. It's a great\n00:04:16.399 question. I mean that light can operate\n00:04:18.560 up to a,000 m below sea before pressure\n00:04:21.680 gets to it. But actually scolops\n00:04:23.280 generally grow between 5 and 200 m below\n00:04:27.280 uh the surface. And unless they're being\n00:04:29.360 farmed on ropes or the equivalent, then\n00:04:31.280 they'll basically settle on the nearest\n00:04:32.720 ledge. And that might be 5 m down, it\n00:04:34.400 might be 100 m down, but they'll never\n00:04:36.639 go deeper than about 200 and that lasts\n00:04:39.360 up to a,000 m. So wherever the scolops\n00:04:41.759 are, if you have one of those, in\n00:04:42.880 theory, it will attract the scolops. I'm\n00:04:45.919 stuck between two worlds. In one world,\n00:04:47.759 we're fishing for scolops more\n00:04:50.160 efficiently and effectively. and\n00:04:52.160 environmentally friendly. But in other\n00:04:53.680 words, we're catching a lot more in that\n00:04:56.720 are they there to be caught already or\n00:04:58.400 were we catching the right amount? Is a\n00:04:59.919 light light a good thing and a bad\n00:05:01.680 thing? I read some really I think\n00:05:03.919 interesting uh scientific marine biology\n00:05:06.880 reports on scolops and how long they\n00:05:08.720 take to mature and the age which we tend\n00:05:10.240 to catch them and the certain size\n00:05:11.440 before you have to throw them back. So\n00:05:12.880 there are lots of controls in place.\n00:05:15.360 This will sit somewhere between hand\n00:05:17.199 dived and the dredging. And the dredging\n00:05:19.520 is causing so much environmental damage\n00:05:21.440 because of the seabed that this is on\n00:05:23.520 the better scale, but isn't hand dived,\n00:05:26.240 which costs an awful lot more and\n00:05:28.639 actually can't be done in certain\n00:05:29.919 weather conditions. So, it sits in the\n00:05:31.680 middle and is trying to be the best of\n00:05:33.199 both worlds, but it's brand new and\n00:05:34.800 there's only a handful of um fishermen\n00:05:37.039 in Cornwall currently using this\n00:05:38.960 process. That's how new it is. to\n00:05:41.039 anybody out there who who dies for\n00:05:43.440 anything food fish related um invite us.\n00:05:46.639 I I want to learn more about that world.\n00:05:48.400 Given that the oceans are a huge carbon\n00:05:50.960 sink and take in about 25% of carbon\n00:05:53.520 emissions and give us about 50% of the\n00:05:55.919 oxygen we breathe on the planet. They're\n00:05:58.880 pretty important. So, do we care about\n00:06:01.280 the health of our oceans? Yes or no? I\n00:06:03.759 feel like you set us up there. I mean,\n00:06:05.600 if I say no, I look like an absolute\n00:06:07.360 now, don't I?\n00:06:08.960 So obviously yes. Yes. Do we think we\n00:06:12.160 can all afford hand dive scolops that\n00:06:14.639 huge luxury? No. No. So is there a place\n00:06:17.440 in the middle where as consumers if you\n00:06:19.520 see this on a menu and you might see it\n00:06:22.000 written as disco scolops which is the\n00:06:24.960 name they're being\n00:06:26.600 given disco. If you see disco scolops\n00:06:30.400 might be one to keep an eye out for. And\n00:06:32.160 definitely not aimed at the consumer but\n00:06:33.759 if you want to catch your own disco\n00:06:34.880 scolops £22 a light. Is this discovery\n00:06:38.000 lighting the way for scolops or just a\n00:06:41.199 flash in the pan? Oh. Oh, well, you\n00:06:43.440 shouldn't cook them for long, should\n00:06:44.479 you? I think that's very rubbery\n00:06:46.800 otherwise. Yeah. Uh, Eders, I think this\n00:06:48.400 is lighting the way. What a great\n00:06:50.080 invention. Love it. In that case, let's\n00:06:51.919 move on to round two.\n00:06:54.000 No text\n00:06:56.720 Thank you for doing the cl hovering. You\n00:06:58.880 can now lift it. Pointless, but\n00:07:02.160 we have a a sparkling and a red. So, go\n00:07:05.840 for the sparkling first.\n00:07:10.160 It's very fruity, very um peachy, I\n00:07:12.639 would say. Very, very fruity, very\n00:07:15.199 refreshing, very clean, delicious,\n00:07:17.440 round, sparkling wine. And there's a red\n00:07:18.880 there as well. Cheers. And bearing in\n00:07:20.800 mind, obviously, wine isn't a trend.\n00:07:23.039 What is the trend you think we're\n00:07:24.800 looking at? I thought the sparkling\n00:07:26.880 wasn't alcoholic. I thought the same cuz\n00:07:29.120 I wasn't getting any alcohol burn\n00:07:31.199 whereas the red is a very rich red. The\n00:07:35.520 white is 11% so the very lower end of uh\n00:07:39.120 wine ABV whereas the red is 14.7% so the\n00:07:43.360 very higher end. Lift the second cl and\n00:07:45.680 see if it gives you any other clues.\n00:07:47.039 Wine grapes. So there's definitely grape\n00:07:49.759 in it. A complete guide to\n00:07:52.199 1,368 wine varieties including their\n00:07:54.639 origins and flavors. Oh flipping it. an\n00:07:57.520 absolute compendium of a book written by\n00:08:01.280 masters of wine and it is the\n00:08:03.520 encyclopedia of wine. There's no\n00:08:05.199 pictures either. There are some\n00:08:06.800 pictures. Oh, good. But not many. It's a\n00:08:08.720 reference book. Before I put you out of\n00:08:10.560 your misery, what do you think the trend\n00:08:11.840 might be? Is it a guide to what drinking\n00:08:14.960 it? Just understanding the berries and\n00:08:16.319 what they what each berry is doing.\n00:08:18.400 Berry grape berries. Is it about using\n00:08:21.240 more grapes than we currently do?\n00:08:25.639 Like are we monocropping grapes\n00:08:28.319 essentially and we're trying to use more\n00:08:30.560 grapes, more varieties? Excellent shout.\n00:08:34.440 So the food standards agency said that\n00:08:37.360 about 60% of UK consumers express a\n00:08:39.519 willingness to try new foods and we are\n00:08:42.000 all getting more food curious. And in\n00:08:44.640 parallel to that, there are over 10,000\n00:08:47.440 global grape varieties and yet just 13\n00:08:51.040 account for a third of all international\n00:08:53.519 plantings. All right. So, the trend is\n00:08:58.080 the food curious, undiscovered, and lost\n00:09:01.440 grape varieties. Interesting. Ebs, you\n00:09:04.240 are a fan of wine. How many grape\n00:09:07.040 varieties do you think you've tried in\n00:09:09.040 your time? 50 to 100 maybe. I don't\n00:09:11.360 know. I've not kept track of\n00:09:13.040 individuals, possibly more. Maybe as\n00:09:14.880 many as 150. But neither But neither of\n00:09:19.760 these two as single\n00:09:22.360 varietal. So, this is part of the loved\n00:09:24.959 and found range at Waitros where they're\n00:09:27.360 bucking the trend. If you stock a\n00:09:28.959 Malbeck or a Shiraz or a Chardonnay or a\n00:09:31.519 procco, you can pretty much guarantee it\n00:09:33.200 will fly off the shelves cuz people are\n00:09:34.480 familiar with it and they'll grab it. If\n00:09:36.160 you put something on there that no one\n00:09:37.519 has ever heard of, might not be able to\n00:09:39.600 even read and pronounce cuz it's in\n00:09:41.040 another language. What are the chances\n00:09:43.200 that people pick it up? Gotcha. Well,\n00:09:44.560 the trend is that the food curious are\n00:09:46.560 going, \"Do you know what? A bit like\n00:09:48.560 Pokémon. I want to catch them all.\"\n00:09:50.640 Interesting. Yeah. Lovely interesting\n00:09:52.480 comparison. Y before I learned a bit\n00:09:54.959 more about wine, I was just picking at\n00:09:57.200 random or picking the ones that kind of\n00:09:58.959 look familiar to me. Um but now I find\n00:10:01.440 myself trusting the selection that the\n00:10:04.240 supermarket or the wine distributor put\n00:10:06.800 on for you. I just go with their their\n00:10:08.399 judgment and try something new every\n00:10:09.680 time. I think this is this would be for\n00:10:11.519 me. I don't really care about what grape\n00:10:13.279 it is as long as it's delicious. Yeah.\n00:10:16.079 And that's the difficult thing is when\n00:10:17.519 you're looking at a label is knowing is\n00:10:19.839 that going to be delicious. Is that what\n00:10:21.920 I like? Yeah, this particular range uh\n00:10:24.800 from Waitros. So, I actually I met their\n00:10:26.880 wine buyer, Pia Paulo. He's a master of\n00:10:29.440 wine and there's a few other masters of\n00:10:30.959 wine who all uh work with that\n00:10:32.560 supermarket and a lot of the other\n00:10:33.680 retailers. They all have master of wines\n00:10:35.200 working with them now. So, you can put\n00:10:36.720 the trust in supermarket wines. And what\n00:10:39.279 they said was that so many of these\n00:10:41.519 grape types in their range are often\n00:10:43.519 lost in blends. They're kind of blended\n00:10:45.120 into stuff and you wouldn't know their\n00:10:46.399 name or they're kind of indigenous and\n00:10:48.160 don't have a place.\n00:10:49.880 However, Chardonnay sales down 163% on\n00:10:55.040 recent years. So, say Leithweights. Uh,\n00:10:57.680 it had its peak in 2002 or three.\n00:11:00.880 Footballers wives Chardonnay the\n00:11:02.959 character. People calling their kids\n00:11:05.399 Shardonnay. It was big. It's less trendy\n00:11:08.079 now. New varieties are coming into play,\n00:11:10.079 especially ones we haven't even heard\n00:11:11.360 of. Fesca Alba. So, it is Muldoven. It\n00:11:14.000 literally means white maiden. And they\n00:11:16.560 say, you pretty much nailed it. uh ripe\n00:11:18.399 pear, maybe some stone fruit, uh ginger\n00:11:21.279 spice, a whisp of fresh herb on the\n00:11:23.519 finish, but sparkling wine and only £9 a\n00:11:27.120 bottle. N qu a bottle and the second\n00:11:31.440 that's when we listen.\n00:11:33.680 Now you're in. N quid sounds 9 quid. So\n00:11:36.640 yeah, it's very very within reach and\n00:11:38.880 affordable, which I guess is the scale\n00:11:40.640 of the retail is able to do that. The\n00:11:42.399 second one is Mataro, which is uh might\n00:11:45.279 otherwise be called Muvedra. You may\n00:11:47.360 have heard that from south of France,\n00:11:48.880 but this is grown in Australia. It was\n00:11:50.800 literally uprooted in the 1980s as part\n00:11:52.800 of a government scheme cuz they wanted\n00:11:54.320 to grow more uh Shiraz and actually only\n00:11:57.600 recently it's been finding its feet\n00:11:59.600 again cuz they found a few that hadn't\n00:12:01.279 been uprooted. So, it was almost lost to\n00:12:04.480 the archives and now it's making a\n00:12:06.160 comeback and you'll get all the fruit\n00:12:07.360 you mentioned plus some Chinese five\n00:12:08.800 spice, pepper, and violet. I would\n00:12:10.639 struggle to spend more than £10 on a\n00:12:12.320 bottle of wine if I don't know that I'm\n00:12:13.920 going to like it. Yeah, no joke. And so\n00:12:15.760 to try something new, it needs to be\n00:12:17.760 accessible\n00:12:19.480 to more of a mainstream wine drinker or\n00:12:23.920 drinking community. And that's the trend\n00:12:25.680 we're seeing. People are more and more\n00:12:27.040 food curious. You go to food markets um\n00:12:29.839 in London and around the UK and you're\n00:12:32.320 getting more and more curiosity about\n00:12:34.560 food cuisines from around the world.\n00:12:36.480 Often cuisines you know very little\n00:12:38.079 about, but you get a chance in a small\n00:12:39.519 plate just to try one portion for 8 to\n00:12:42.000 12 quid. But it's the whole pomposity\n00:12:45.120 around wine is that sometimes you don't\n00:12:47.440 know what grapes you're drinking because\n00:12:49.120 you're drinking a wine that is called\n00:12:51.440 the name of the region or a brand and\n00:12:54.399 sometimes it is the grape and it's just\n00:12:55.839 like well unless you're going to get\n00:12:57.120 into it no one really understands what's\n00:12:59.920 going on. I don't know how many grape\n00:13:01.279 types I've drunk in wine over the last\n00:13:04.480 few years because I think it is really\n00:13:06.240 hard to track. So finding ways to do it\n00:13:07.760 in an easier way is going to help it\n00:13:09.680 become more accessible. We sit in very\n00:13:11.680 unusual positions cuz we play a lot of\n00:13:13.680 these games on the channel. But do you\n00:13:15.200 think you are very comfortable in what\n00:13:17.680 you know about food and drink or are you\n00:13:20.240 always on the lookout for something new?\n00:13:21.920 One thing has proven on this show over\n00:13:24.079 and over again is that we know nothing\n00:13:26.000 and the times are always changing and\n00:13:27.600 you have to keep moving with it. We know\n00:13:29.440 more than a lot of people but relative\n00:13:31.839 to how much there is to know, it's\n00:13:34.079 nothing. So always always finding new\n00:13:36.720 stuff. In which case, the final\n00:13:38.079 question. Are you going to pop a cork on\n00:13:39.839 something new or are you fine the way\n00:13:41.279 you are? Keep them popping, Evans.\n00:13:43.440 Because you are so nicely, I will pop\n00:13:44.880 your cork. Excellent. In which case,\n00:13:46.800 round three.\n00:13:48.000 No text\n00:13:48.640 [Music]\n00:13:50.880 Number three, lift cloch. A\n00:13:54.190 [Music]\n00:13:56.399 uh some kind of meat, but it's sweet. It\n00:13:59.040 looks like a fake meat. It looks like a\n00:14:00.800 a a dried fruit. You know what I mean?\n00:14:02.880 It's got like pulled meat kind of.\n00:14:07.120 No, it's not meat. Oh, that's not meat.\n00:14:09.920 That's That\n00:14:11.800 is like meat. You know what? That that\n00:14:15.199 tastes like half meat, half Christmas\n00:14:18.959 pudding. Ooh, it has got that jellied\n00:14:22.880 aspect to it. Yeah. Kind of like dried\n00:14:25.680 fruit. I mean, we have tossed it in a\n00:14:28.480 barbecue sauce which does have spice and\n00:14:30.959 smoke and fruit. Any idea what it is? It\n00:14:33.680 feels like a meat replacement, but still\n00:14:36.639 a natural product, if that makes sense.\n00:14:38.800 It's not lab grown meat or something\n00:14:42.240 like that. A bit like jackf fruit. Yeah.\n00:14:46.480 If clash be\n00:14:49.279 mushrooms\n00:14:50.800 doesn't taste like a mushroom. Shiakei\n00:14:53.600 mushrooms at that and specifically the\n00:14:56.639 stalks. Right boys, we crafted you some\n00:14:59.120 simple tacos. But first off, a stat. The\n00:15:02.079 European Union have said that the volume\n00:15:03.680 in the meat substitution segment of the\n00:15:05.680 market is forecast to continue\n00:15:07.680 increasing between 2025 in 2030 by\n00:15:11.279 another\n00:15:12.600 41% after the 10th consecutive\n00:15:15.279 increasing year. So it continues to move\n00:15:18.000 up. This is not an alternative protein.\n00:15:21.199 This is a meat alternative because the\n00:15:23.279 protein content of mushrooms is about 2%\n00:15:25.440 compared to that of beef or chicken or\n00:15:27.839 pork or what it is replacing. Gotcha.\n00:15:30.959 I've definitely said in the past that I\n00:15:32.480 could easily substitute meat with\n00:15:35.199 mushrooms. I adore them. Funny how that\n00:15:38.880 one didn't appeal to me on the first\n00:15:40.880 bite. This is a product called Fable\n00:15:43.199 which you can buy. It is the shiakei\n00:15:45.519 mushroom stalk as a meat alternative and\n00:15:48.639 then you can flavor it how you like.\n00:15:50.720 It's used a lot in industry. Wagam\n00:15:53.440 Mumas, Roses Thai, some of their vegan,\n00:15:56.160 vegetarian options on the menu use this\n00:15:58.079 product, but it is also available uh\n00:16:00.480 from places like Holland and Barrett.\n00:16:02.079 Cheers. You just smashed my taco.\n00:16:07.760 [Music]\n00:16:12.480 In that setup, it works because there's\n00:16:15.279 so much other stuff going on. There's so\n00:16:17.120 many other distract textures, flavors,\n00:16:19.680 distractions that you're not just\n00:16:21.920 tasting the mushroom. No, no, it's doing\n00:16:25.680 it's doing a\n00:16:27.800 job. I'm intrigued by it being the\n00:16:30.560 shiakei stalk\n00:16:32.759 specifically. Why? Have you ever seen\n00:16:35.040 shiakei mushrooms grow? So shiakei\n00:16:38.399 literally the shi h i is the type of\n00:16:42.399 tree and take is mushroom. So shitake is\n00:16:45.839 literally tree mushroom and they grow\n00:16:47.920 from trees. The stalks are really quite\n00:16:50.639 long. However, when they're harvested,\n00:16:52.240 they don't want to give the consumer the\n00:16:53.600 really long stalk cuz actually the\n00:16:56.240 texture is quite chewy and fibrous. So\n00:16:59.199 they snip it off and you buy shiakei\n00:17:00.800 mushrooms like that. There's a huge\n00:17:02.560 amount of bow-waste from anyone who is\n00:17:04.640 farming shiakei mushrooms and they've\n00:17:05.919 got nothing to do with that long stalk.\n00:17:07.679 this company Fable take that shiitakei\n00:17:10.160 mushroom stalk which is otherwise\n00:17:11.760 agricultural waste and turn it into a\n00:17:14.240 product and even people like H use in\n00:17:17.439 his restaurants. Now, whenever we have\n00:17:19.039 conversations like this, the comments\n00:17:20.480 always pipe up and say there isn't much\n00:17:23.679 waste in the food manufacturing\n00:17:26.079 industry. Everything goes somewhere at\n00:17:28.640 some point. Turning it into more\n00:17:30.559 consumerf facing items does have, I\n00:17:33.600 think, probably more profit attached to\n00:17:35.919 it and brand building and all of that\n00:17:37.919 kind of thing. Fable say that you can\n00:17:39.600 put it into burgers, wraps, salads,\n00:17:41.360 stirfries, stews, curries, and more.\n00:17:43.919 Great in dumplings. You can flavor them\n00:17:45.679 any which way. It was at the if that I\n00:17:48.160 went to looking at other food trends in\n00:17:49.760 the area and uh the guy on the fable\n00:17:52.480 stand waved me over and said, \"Been a\n00:17:54.320 fan of the channel for years and years\n00:17:55.679 and years. Have you ever heard about\n00:17:57.280 this?\" He pointed out GMO free,\n00:17:59.760 preservative free. Uh it's also a\n00:18:02.160 thousand times less land per calorie\n00:18:05.840 than beef and is 100% carbon neutral.\n00:18:08.960 How process heavy is it? Because that's\n00:18:10.799 one of the things we've seen with yes,\n00:18:12.320 it's a meat alternative and you're not\n00:18:13.840 doing the meat side of things, but is it\n00:18:16.720 so ultrarocessed that you're creating a\n00:18:18.880 load of other potential problems over\n00:18:20.880 here instead? You're very right.\n00:18:22.559 Compared to shiitakei mushroom stalks or\n00:18:25.120 the mushrooms as they are, they are more\n00:18:27.679 processed but free of GMO preservatives,\n00:18:31.760 artificial ingredients and minimally so\n00:18:34.320 because the mushroom is already dense,\n00:18:36.559 fleshy fibers and has the umami flavor,\n00:18:38.559 the glutamates that we love in food. So\n00:18:41.840 yes, it's a processed food ultra an\n00:18:44.559 ultrarocessed food. Not something you\n00:18:45.760 could do at home, but it is using the\n00:18:48.320 agricultural by waste and it's not\n00:18:50.000 adding in extra preservatives or\n00:18:52.160 artificial ingredients. Again, I love\n00:18:54.320 that texture for me. It's not it won't\n00:18:56.960 replace a meat that I already love in\n00:18:59.360 the setting, but it's a good\n00:19:00.799 alternative. It falls into the meat\n00:19:02.960 alternative bracket, but when I was\n00:19:04.640 speaking to them, they were like, \"We\n00:19:05.919 want this to be a mushroom product, not\n00:19:07.840 a meat alternative product.\" and it uses\n00:19:10.160 the byproduct of waste. Interestingly,\n00:19:12.320 funstat, this meat alternative is more\n00:19:14.799 closely related to an animal than it is\n00:19:16.640 a plant. So, the co-founder Michael Fox\n00:19:19.520 said in an interview with Total Food, on\n00:19:21.039 the evolutionary tree, fungi are more\n00:19:23.760 closely related to animals than they are\n00:19:25.120 to plants. Cuz fungi are a type of\n00:19:27.039 bacteria, not a type Yeah. Yeah. Yeah.\n00:19:28.799 Yeah. Yeah. Their own their own little\n00:19:30.080 bracket. Animal, mineral, vegetable,\n00:19:32.160 none. Price-wise, a 250 g pack of\n00:19:35.200 Holland and Barrett comes in at\n00:19:36.840 £4.79. So, it's also at the moment kind\n00:19:39.440 of on par with the price of a good\n00:19:41.679 steak, I guess. Which leaves just one\n00:19:44.559 question. Is this just another folklore\n00:19:46.880 and fable\n00:19:48.960 or will this make you the fun guy at\n00:19:50.400 your next taco party?\n00:19:53.320 I like and don't love them. I like the\n00:19:57.120 story. Yeah, I like the story. I'm not\n00:19:59.840 100%\n00:20:01.799 convinced by that just yet. Fair enough.\n00:20:05.440 One more for you.\n00:20:07.000 No text\n00:20:07.270 [Music]\n00:20:09.919 Lift away on a\n00:20:13.280 more drinks. A\n00:20:15.160 carbonated beverage. Oh, there's a\n00:20:17.360 frothy beverageage.\n00:20:21.679 It's got fizz. It's got a sourness to\n00:20:23.840 it. So, one of my favorite drinks at the\n00:20:25.840 moment is I've got aloe vera juice with\n00:20:28.480 the little globles in it. Yeah. It's\n00:20:30.799 just I'm I love it so much. It's the\n00:20:32.400 wetest thing ever. Yeah. This has got\n00:20:34.080 that same refreshing vibe to it. Yeah.\n00:20:36.559 Like coconut water being more refreshing\n00:20:38.480 than water. Water. Yeah. Because of its\n00:20:40.480 viscosity, it fills more of your mouth\n00:20:42.880 than water that would just disappear.\n00:20:44.960 It's almost got a grapy. A bit like a\n00:20:48.000 bit like the first earlier. It's quite\n00:20:50.000 grapy.\n00:20:51.679 Any other flavor notes? It's like a It's\n00:20:53.760 like an almost a an a curd. An apple\n00:20:56.120 curd. Like a apple pie. Apple pie. Apple\n00:21:00.159 could be could be interesting. They say\n00:21:02.480 notes of pear, lyche, citrus, but most\n00:21:06.080 importantly tropical. Oh, I would say\n00:21:08.400 that tropical. And that's because this\n00:21:10.400 grows within 20° of the equator in the\n00:21:13.679 tropical belt. Lift clch. It's delicious\n00:21:16.400 though. I love that cocoa chocolate. The\n00:21:21.280 cacao fruit. M. I've had chocolate\n00:21:24.640 before. This tastes nothing like it.\n00:21:27.440 That Barry is because\n00:21:30.480 70% of the cacao fruit is discarded\n00:21:33.440 after cocoa bean production cuz it's\n00:21:36.000 just the beans we use. The white fleshy\n00:21:39.039 fruit around the outside which is very\n00:21:41.120 tropical but not necessarily\n00:21:43.080 chocolatey is often wasted. Now\n00:21:45.760 sometimes it is left on the bean to\n00:21:47.280 ferment and to give the chocolate some\n00:21:48.720 of its characters and notes but more\n00:21:50.480 often than not it's just lost. So this\n00:21:53.919 drink cowba upcycles this superfruit in\n00:21:58.799 situ to trap in its goodness and then\n00:22:01.520 they just combine literally two\n00:22:02.960 ingredients. Cold pressed cacao fruit\n00:22:05.840 juice and sparkling water. That's it.\n00:22:09.400 Oo. They've got a really tough job here\n00:22:12.640 cuz I picked that up and I think that\n00:22:14.000 looks like a kombucha can. Yes. Yeah.\n00:22:17.120 But you read it and you go cacao fruit.\n00:22:19.440 You just assume it to be chocolatey.\n00:22:21.280 deliciously tropical but it's not\n00:22:23.919 chocolatey. You mentioned coconut water\n00:22:25.760 a little while ago and in a similar way\n00:22:28.240 this has all that natural kind of\n00:22:29.919 flavonoid supporting heart health\n00:22:31.840 wellness. It's considered a super fruit\n00:22:34.320 in the terms of its number of micro\n00:22:37.039 nutrients uh in it as a fruit per 100 g\n00:22:40.240 means it is very good for you but only\n00:22:42.240 if it can be preserved. And we\n00:22:43.600 deliberately got that cocoa pod sent\n00:22:46.000 over. Um, and already when we cut into\n00:22:48.720 it, you know, that's been on a ship for\n00:22:50.880 an awful long time. It's not at its\n00:22:53.200 best. The beans will be absolutely fine,\n00:22:54.799 but the fruit inside is not preserved as\n00:22:56.960 well as if it's processed, coldressed in\n00:22:59.679 place of origin, and canned. I really\n00:23:02.000 like it. And it's something that's\n00:23:04.280 completely new. It reminds me a little\n00:23:06.640 bit of a sour, but it has that egg white\n00:23:10.000 kind of thickness to it. Yeah. And\n00:23:12.000 that's because it's literally just cold\n00:23:13.280 pressed. So they take all of that pulp,\n00:23:15.120 cold press it, and then mix it in with\n00:23:17.600 uh sparkling water. They have lots of\n00:23:20.799 recipes for cocktails on their website.\n00:23:23.440 But importantly, ethically sourced by\n00:23:25.600 working directly with the cacao farmers,\n00:23:27.360 which actually gives them a whole\n00:23:28.960 another revenue stream. So they will get\n00:23:31.120 X for their cocoa beans on the market at\n00:23:33.919 the price of cocoa beans and if if\n00:23:36.080 they're lucky the fair trade price and\n00:23:37.520 if they're lucky an even better price\n00:23:39.280 when they're working directly with\n00:23:40.400 chocoliers who care but 70% of the fruit\n00:23:43.120 often goes to waste and now with this\n00:23:46.000 company they will get revenues for the\n00:23:48.159 bit that normally just rots and the\n00:23:50.960 company founder Matthew Halford uh says\n00:23:54.559 that it's pretty much 100% sustainable\n00:23:56.720 because it's all waste material and\n00:23:59.280 they're the first company using cow\n00:24:01.360 fruit at this scale in the UK because\n00:24:03.520 it's only recently been allowed because\n00:24:06.000 up until then it wasn't considered food\n00:24:08.080 so they couldn't control it.\n00:24:09.600 Interesting. That's incredible. So not\n00:24:11.360 unlike the shiitakei mushroom stalks, it\n00:24:13.520 is upycling agricultural waste. A lot of\n00:24:16.799 resource and input goes into growing the\n00:24:18.480 fruit in the first place. It's a shame\n00:24:20.000 to throw away 70%. The cocoa bean\n00:24:21.919 industry creates 10 million metric tons\n00:24:25.679 of waste a year just so we can have the\n00:24:28.640 beans turned into chocolate because it's\n00:24:30.880 brand new as a category as a and as a\n00:24:33.840 product. How do you educate and explain\n00:24:36.799 to people what it is, why it's good, how\n00:24:39.679 do you get them to taste like that's\n00:24:41.120 going to need so much investment to get\n00:24:42.720 it off the ground and to get it into any\n00:24:45.760 kind of mainstream thinking. Price-wise,\n00:24:48.559 uh, currently available from them at £30\n00:24:51.440 for 12 cans. So, actually on par with\n00:24:54.720 most high-end kombuchas and sparkling\n00:24:57.200 drinks. So, the question, oh, a\n00:24:59.840 sparkling new idea or a bio waste of\n00:25:02.640 time. I think it's a sparkling new idea.\n00:25:04.880 I'd love to see it take off. Really\n00:25:06.640 would. Yeah, I'm intrigued to see where\n00:25:08.559 it's going to go. Definitely sparkling.\n00:25:11.200 Excellent. Comment down below of those\n00:25:13.039 four food trends, which would you most\n00:25:15.919 like to try? And if you see other things\n00:25:18.480 out and about in the world of food and\n00:25:19.600 drink that we should be covering, we\n00:25:21.120 want to hear from you. Comment down\n00:25:22.159 below."
+            "youtube_url": "https://www.youtube.com/watch?v=_TY1l23e1ow",
+            "transcript_raw": "# tactiq.io free youtube transcript\n# How Does Groupon Work - Business Model Explained\n# https://www.youtube.com/watch/_TY1l23e1ow\n\n00:00:02.090 [Music]\n00:00:06.399 groupon\n00:00:07.600 if anybody doesn't know who they are\n00:00:09.040 groupon's a website and a mobile app and\n00:00:11.440 what they do is they offer coupons\n00:00:14.000 cashback on purchases and group deals to\n00:00:17.119 different consumers right so they work\n00:00:18.960 with like restaurants retailers\n00:00:21.359 manufacturers and they all use these\n00:00:23.840 deals in an effort to get customers\n00:00:26.640 to walk into their establishment or\n00:00:30.160 purchase their products\n00:00:32.079 groupon is an e-commerce marketplace\n00:00:34.880 right we've talked about marketplaces in\n00:00:36.800 the past right a marketplace is where\n00:00:39.600 buyers and sellers come right a\n00:00:41.600 marketplace could be a supermarket stock\n00:00:44.239 market\n00:00:45.200 and groupon is a marketplace it's\n00:00:47.680 bringing together\n00:00:49.280 buyers and sellers right and they're\n00:00:52.320 making a middle hey it's like arbitrage\n00:00:54.640 right\n00:00:56.320 right you're bringing together a buyer a\n00:00:58.160 seller they don't even necessarily own\n00:01:00.399 any products at least in the beginning\n00:01:01.680 they didn't now they do some of that but\n00:01:04.479 overall what they're doing is in this\n00:01:06.640 marketplace they get people\n00:01:08.960 to subscribe to groupon and they connect\n00:01:12.320 them with local merchants that's what's\n00:01:15.759 so powerful about this is that\n00:01:17.920 groupon was able to help the local\n00:01:19.840 merchant the nail salon the massage\n00:01:23.439 place you know um it could be a a\n00:01:26.400 service like a a\n00:01:28.080 chiropractor or a doctor right the thing\n00:01:30.640 is is that they were able to come out\n00:01:32.560 and do this on a local basis which is\n00:01:34.560 really really powerful right now the\n00:01:37.280 thing with that is that you know there's\n00:01:39.439 two sides of this business there's the\n00:01:41.520 acquisition side of building up your\n00:01:43.439 subscribers building up your your list\n00:01:45.600 your email list that you're going to go\n00:01:47.920 and market to but you also have to have\n00:01:50.240 another side where you need to go find\n00:01:52.720 merchants and get merchants to come and\n00:01:55.280 get deals that they're going to offer\n00:01:57.759 about their product or service\n00:02:00.079 to the groupon subscribers so there's\n00:02:02.799 two sides the business to grow this\n00:02:04.799 right in a marketplace gotta find the\n00:02:06.960 merchants the advertisers and you got to\n00:02:09.038 go find the subscribers of consumers\n00:02:11.038 then you put them together and then you\n00:02:13.360 make\n00:02:14.400 a piece of that revenue they do things\n00:02:16.400 in activities travel goods and services\n00:02:20.080 across 15 countries and\n00:02:23.280 they ultimately trying to save you money\n00:02:25.840 through the use of any type of virtual\n00:02:28.000 coupon that's the value add for a\n00:02:30.560 consumer right what they try to do is\n00:02:32.480 they try to bring together a lot of\n00:02:34.080 people\n00:02:35.040 to take the deal and when that person\n00:02:38.239 when they hit that deal and there's\n00:02:39.599 enough people that that take the deal\n00:02:42.480 then that deal is intact and then\n00:02:46.080 everybody gets a discount so you'll see\n00:02:47.920 things at times where it's like 70\n00:02:50.400 off of the regular price where you\n00:02:52.879 really can't get anywhere else right\n00:02:55.200 that's the value of a subscriber to\n00:02:56.959 groupon and what they're doing is\n00:02:58.959 they're using the power of of people of\n00:03:01.680 groups to come in and say okay let's if\n00:03:04.239 we get a thousand people to buy this\n00:03:06.400 coupon this this this groupon of a deal\n00:03:11.440 at a 70 discount then it's active\n00:03:17.040 [Music]\n00:03:24.560 you"
           },
           "webhookUrl": "https://n8n-local.titansdev.es/webhook-test/content-alchemy",
           "executionMode": "test"
@@ -795,7 +795,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "5db05c86-3313-4077-ba8b-98ae75da26f2",
+  "versionId": "8fabcb5c-9662-4f5e-a888-756314cb194b",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "1e8cd585d79c04ebe416ae79f7875a6aa1c7d772f5a48602ee3806a48dd1dc68"
